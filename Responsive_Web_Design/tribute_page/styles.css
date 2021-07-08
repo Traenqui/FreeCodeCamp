@@ -1,0 +1,27 @@
+/* User Story #8: The img element should responsively resize, relative to the width of its parent element, without exceeding its original size.*/
+
+#image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+	background-color: black;
+	color: white;
+	font-family: calibri;
+}
+
+@media only screen and (max-width: 800px) 
+{
+  #image {
+    width: 85vw;
+  }
+}
+
+/* User Story #9: The img element should be centered within its parent element. */
+.center {
+	margin: auto;
+    padding: auto;
+    text-align: center;
+}

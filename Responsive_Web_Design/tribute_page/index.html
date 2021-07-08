@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tribute Page</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<!-- User Story #1: My tribute page should have an element with a corresponding id="main", which contains all other elements. -->
+	<div id="main">
+		<!-- User Story #2: I should see an element with a corresponding id="title", which contains a string (i.e. text) that describes the subject of the tribute page (e.g. "Dr. Norman Borlaug"). -->
+		<h1 id="title">Tribute Test Page</h1>
+
+
+		<!-- User Story #3: I should see a div element with a corresponding id="img-div". -->
+		<div id="img-div">
+			<!-- User Story #4: Within the img-div element, I should see an img element with a corresponding id="image". -->
+			<img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Philips_PM5544.svg" alt="Test Card" id="image" height="20%" width="20%" class="center">
+
+			<!-- User Story #5: Within the img-div element, I should see an element with a corresponding id="img-caption" that contains textual content describing the image shown in img-div. -->
+			<p id="img-caption"><em>A test card, is a television test signal, typically broadcast at times when the transmitter is active but no program is being broadcast.</em></p>
+		</div>
+
+		<!-- User Story #6: I should see an element with a corresponding id="tribute-info", which contains textual content describing the subject of the tribute page. -->
+		<div id="tribute-info">
+			<p>
+				<p>
+					Test cards typically contain a set of patterns to enable television cameras and receivers to be adjusted to show the picture correctly (see SMPTE colour bars). Most modern test cards include a set of calibrated colour bars which will produce a characteristic pattern of "dot landings" on a vectorscope, allowing chroma and tint to be precisely adjusted between generations of videotape or network feeds. SMPTE bars—and several other test cards—include analog black (a flat waveform at 7.5 IRE, or the NTSC setup level), full white (100 IRE), and a "sub-black", or "blacker-than-black" (at 0 IRE), which represents the lowest low-frequency transmission voltage permissible in NTSC broadcasts (though the negative excursions of the colourburst signal may go below 0 IRE). Between the colour bars and proper adjustment of brightness and contrast controls to the limits of perception of the first sub-black bar, an analogue receiver (or other equipment such as VTRs) can be adjusted to provide impressive fidelity.
+				</p>
+				<p>
+					They are also used in the broader context of video displays for concerts and live events. There are a variety of different test patterns, each testing a specific technical parameter: gradient monotone bars for testing brightness and colour; a crosshatch pattern for aspect ratio, alignment, focus, and convergence; and a single-pixel border for over-scanning and dimensions.
+				</p>
+			</p>
+		</div>
+		<!-- User Story #7: I should see an a element with a corresponding id="tribute-link", which links to an outside site that contains additional information about the subject of the tribute page. HINT: You must give your element an attribute of target and set it to _blank in order for your link to open in a new tab (i.e. target="_blank"). -->
+		<a href="https://en.wikipedia.org/wiki/Test_card" id="tribute-link" target="_blank">Learn more</a>
+	</div>
+</body>
+</html>
