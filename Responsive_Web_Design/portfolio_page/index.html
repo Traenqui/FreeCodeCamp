@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Protfolio</title>
+        <link rel="styleSheet" href="styles.css">
+    </head>
+    <body>
+        <header id="header">
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Philips_PM5544.svg/1920px-Philips_PM5544.svg.png"
+                width="300px"
+                height="100px"
+                alt="Test-Card-Logo"
+                id="logo"
+            />
+
+            <!-- User Story #6: My portfolio should have a navbar with an id of navbar. -->
+            <nav id="navbar">
+                <h3>
+                    Traenqui
+                    <!-- User Story #7: The navbar should contain at least one link that I can click on to navigate to different sections of the page. -->
+                    <a href="#welcome-section" class="nav-link"> Hello </a>
+                    <a href="#projects" class="nav-link"> Portfolio </a>
+                    <a href="##skills" class="nav-link"> Skills </a>
+                    <a href="#contact" class="nav-link"> Contact </a>
+                </h3>
+            </nav>
+        </header>
+
+        <!-- User Story #1: My portfolio should have a welcome section with an id of welcome-section. -->
+        <section id="welcome-section">
+            <!-- User Story #2: The welcome section should have an h1 element that contains text. -->
+            <h1>Traenqui</h1>
+            <h2>IT Student</h2>
+        </section>
+
+        <!-- User Story #3: My portfolio should have a projects section with an id of projects. -->
+        <section id="projects">
+            <h3>Projects</h3>
+
+            <div class="projects-grid">
+                <nav id="projectbar">
+                    <!-- User Story #4: The projects section should contain at least one element with a class of project-tile to hold a project. -->
+                    <a
+                        id="fcc"
+                        class="project-tile"
+                        href="https://github.com/Traenqui/FreeCodeCamp"
+                        target="_blank"
+                        >FreeCodeCamp Repo</a
+                    >
+                    <!-- User Story #5: The projects section should contain at least one link to a project. -->
+                    <a
+                        id="reddit-link"
+                        class="project-tile"
+                        href="https://www.reddit.com/user/Traenqui"
+                        target="_blank"
+                        >Reddit</a
+                    >
+                    <!-- User Story #8: My portfolio should have a link with an id of profile-link, which opens my GitHub or FCC profile in a new tab. -->
+                    <a
+                        id="profile-link"
+                        class="project-tile"
+                        href="https://github.com/Traenqui"
+                        target="_blank"
+                        >Github</a
+                    >
+                </nav>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h3>My Skills</h3>
+        </section>
+
+
+    </body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>

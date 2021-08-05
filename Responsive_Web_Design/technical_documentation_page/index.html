@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Technical Documentation</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<!-- User Story #8: I can see a nav element with a corresponding id="navbar". -->
+		<nav id="navbar">
+			<header>Queue Data Structure</header>
+			<ul>
+				<li>
+					<a href="#introduction" class="nav-link">Introduction</a>
+				</li>
+				<li>
+					<a href="#operations" class="nav-link"
+						>Basic Operations of Queue</a
+					>
+				</li>
+				<li>
+					<a href="#working" class="nav-link">Working of Queue</a>
+				</li>
+				<li>
+					<a href="#implementation" class="nav-link"
+						>Implementation</a
+					>
+				</li>
+				<li>
+					<a href="#analysis" class="nav-link">Complexity Analysis</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- User Story #1: I can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation). -->
+		<main id="main-doc">
+			<!-- User Story #2: Within the #main-doc element, I can see several section elements, each with a class of main-section. There should be a minimum of 5. -->
+			<section class="main-section" id="introduction">
+				<!-- User Story #3: The first element within each .main-section should be a header element which contains text that describes the topic of that section. -->
+				<header>Introduction</header>
+				<article>
+					<p>
+						Here you will learn what a queue is and you will find
+						some implementations of queues in C and Python
+					</p>
+					<p>
+						A queue is a useful data structure in programming. It is
+						similar to the ticket queue outside a cinema hall, where
+						the first person entering the queue is the first person
+						who gets the ticket.
+					</p>
+					<p>
+						Queue follows the
+						<strong>First In First Out (FIFO)</strong> rule - the
+						item that goes in first is the item that comes out
+						first.
+					</p>
+					<p>
+						In the above image, since 1 was kept in the queue before
+						2, it is the first to be removed from the queue as well.
+						It follows the <strong>FIFO</strong> rule.
+					</p>
+
+					<p>
+						In programming terms, putting items in the queue is
+						called <strong>enqueue</strong>, and removing items from
+						the queue is called <strong>dequeue</strong>.
+					</p>
+
+					<p>
+						We can implement the queue in any programming language
+						like C, C++, Java, Python or C#, but the specification
+						is pretty much the same.
+					</p>
+				</article>
+			</section>
+			<!-- User Story #4: Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "JavaScript and Java" should have a corresponding id="JavaScript_and_Java"). -->
+			<section class="main-section" id="operations">
+				<header>Basic Operations of Queue</header>
+			</section>
+			<section class="main-section" id="working">
+				<header>Working with Queue</header>
+			</section>
+			<section class="main-section" id="implementation">
+				<header>Queue Implementations in C and Python</header>
+				<article>
+					<p>The Queue Implementation with Python</p>
+					<p>You can implement the Queue as a class</p>
+					<code>
+						class Queue: 
+							def __init__(self): 
+							self.queue = [] 
+
+							# Add an element 
+							def enqueue(self, item):
+								self.queue.append(item) 
+
+							# Remove an element 
+							def	dequeue(self): 
+								if len(self.queue) < 1: 
+									return None
+								return self.queue.pop(0) 
+
+							# Display the queue
+							def display(self): 
+								print(self.queue) 
+
+							def size(self): 
+								return len(self.queue)
+					</code>
+					<p>Or if you use C</p>
+					<p>The enQueue function</p>
+					<code>
+						void enQueue(int value) {
+							if (rear == SIZE - 1)
+							    printf("\nQueue is Full!!");
+							else {
+							    if (front == -1)
+							        front = 0;
+							    rear++;
+							    items[rear] = value;
+							    printf("\nInserted -> %d", value);
+							}
+						}
+					</code>
+					<p>The deQueue function</p>
+					<code>
+						void deQueue() {
+						    if (front == -1)
+						    	printf("\nQueue is Empty!!");
+						    else {
+							    printf("\nDeleted : %d", items[front]);
+							    front++;
+						    	if (front > rear)
+						        	front = rear = -1;
+						  	}
+						}
+					</code>
+					<p>And for easier use of the Queue, we can implement a new print function</p>
+					<code>
+						// Function to print the queue
+						void display() {
+						  if (rear == -1)
+						    printf("\nQueue is Empty!!!");
+						  else {
+						    int i;
+						    printf("\nQueue elements are:\n");
+						    for (i = front; i <= rear; i++)
+						      printf("%d  ", items[i]);
+						  }
+						  printf("\n");
+						}
+					</code>
+				</article>
+			</section>
+			<section class="main-section" id="analysis">
+				<header>Complexity Analysis</header>
+			</section>
+		</main>
+	</body>
+</html>
