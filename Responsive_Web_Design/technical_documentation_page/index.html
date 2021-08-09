@@ -14,12 +14,12 @@
 					<a href="#introduction" class="nav-link">Introduction</a>
 				</li>
 				<li>
-					<a href="#operations" class="nav-link"
+					<a href="#Basic_Operations_of_Queue" class="nav-link"
 						>Basic Operations of Queue</a
 					>
 				</li>
 				<li>
-					<a href="#working" class="nav-link">Working of Queue</a>
+					<a href="#Working_of_Queue" class="nav-link">Working of Queue</a>
 				</li>
 				<li>
 					<a href="#implementation" class="nav-link"
@@ -27,7 +27,7 @@
 					>
 				</li>
 				<li>
-					<a href="#analysis" class="nav-link">Complexity Analysis</a>
+					<a href="#Complexity_Analysis" class="nav-link">Complexity Analysis</a>
 				</li>
 			</ul>
 		</nav>
@@ -74,14 +74,25 @@
 				</article>
 			</section>
 			<!-- User Story #4: Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "JavaScript and Java" should have a corresponding id="JavaScript_and_Java"). -->
-			<section class="main-section" id="operations">
+			<!-- User Story #5: The .main-section elements should contain at least 10 p elements total (not each). -->
+			<!-- User Story #6: The .main-section elements should contain at least 5 code elements total (not each). -->
+			<!-- User Story #7: The .main-section elements should contain at least 5 li items total (not each). -->
+			<section class="main-section" id="Basic_Operations_of_Queue">
 				<header>Basic Operations of Queue</header>
+				<ul>
+					<li><strong>Enqueue</strong>: Add an element to the end of the queue</li>
+					<li><strong>Dequeue</strong>: Remove an element from the front of the queue</li>
+					<li><strong>IsEmpty</strong>: Check if the queue is empty</li>
+					<li><strong>IsFull</strong>: Check if the queue is full</li>
+					<li><strong>Peek</strong>: Get the value of the front of the queue without removing it</li>
+				</ul>
 			</section>
-			<section class="main-section" id="working">
-				<header>Working with Queue</header>
+			<section class="main-section" id="Working_of_Queue">
+				<header>Working of Queue</header>
+
 			</section>
 			<section class="main-section" id="implementation">
-				<header>Queue Implementations in C and Python</header>
+				<header>Implementation</header>
 				<article>
 					<p>The Queue Implementation with Python</p>
 					<p>You can implement the Queue as a class</p>
@@ -152,8 +163,9 @@
 					</code>
 				</article>
 			</section>
-			<section class="main-section" id="analysis">
+			<section class="main-section" id="Complexity_Analysis">
 				<header>Complexity Analysis</header>
+				<p>The complexity of enqueue and dequeue operations in a queue using an array is <code>O(1)</code>. If you use <code>pop(N)</code> in python code, then the complexity might be <code>O(n)</code> depending on the position of the item to be popped.</p>
 			</section>
 		</main>
 	</body>
